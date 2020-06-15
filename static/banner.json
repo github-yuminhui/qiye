@@ -1,0 +1,21 @@
+[{
+        "pic": "image/banner_max_1.jpg",
+        "pic_min": "image/banner_min_1.jpg"
+    },
+    {
+        "pic": "image/banner_max_2.jpg",
+        "pic_min": "image/banner_min_2.jpg"
+    },
+    {
+        "pic": "image/banner_max_3.jpg",
+        "pic_min": "image/banner_min_3.jpg"
+    },
+    {
+        "pic": "image/banner_max_5.jpg",
+        "pic_min": "image/banner_min_5.jpg"
+    },
+    {
+        "pic": "image/banner_max_8.jpg",
+        "pic_min": "image/banner_min_8.jpg"
+    }
+]

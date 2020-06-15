@@ -1,0 +1,273 @@
+.w12 {
+  width: 1200px;
+}
+
+.vip-focusmap {
+  height: 440px;
+  margin-bottom: 30px;
+  background: #ddd;
+}
+
+.vip-focusmap .focusmap-holder {
+  width: 100%;
+  height: 100%;
+}
+
+.vip-focusmap .focusmap-holder li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.vip-focusmap .focusmap-holder li:nth-child(1) {
+  z-index: 10;
+  opacity: 1;
+}
+
+.vip-focusmap .focusmap-holder li img {
+  width: 100%;
+  height: 100%;
+}
+
+.vip-focusmap .focusmap-l-arr,
+.vip-focusmap .focusmap-r-arr {
+  z-index: 20;
+  position: absolute;
+  top: 198px;
+  width: 43px;
+  height: 43px;
+  background: url("../image/vip-tips.png") no-repeat;
+  opacity: 0.7;
+}
+
+.vip-focusmap .focusmap-l-arr:hover,
+.vip-focusmap .focusmap-r-arr:hover {
+  opacity: 1;
+}
+
+.vip-focusmap .focusmap-l-arr {
+  background-position: 0 -50px;
+  left: 55px;
+}
+
+.vip-focusmap .focusmap-r-arr {
+  background-position: -43px -50px;
+  right: 55px;
+}
+
+.vip-focusmap .focusmap-thumb {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  bottom: 0;
+  background: url(../img/vip-tips.png) 0 -100px;
+  text-align: center;
+}
+
+.vip-focusmap .focusmap-thumb ul {
+  display: inline-block;
+  height: 50px;
+  padding: 10px 0 10px 8px;
+}
+
+.vip-focusmap .focusmap-thumb ul li {
+  display: inline-block;
+  width: 68px;
+  height: 50px;
+  margin-right: 8px;
+  position: relative;
+  background: #000;
+  cursor: pointer;
+}
+
+.vip-focusmap .focusmap-thumb ul li img {
+  width: 68px;
+  height: 50px;
+}
+
+.vip-focusmap .focusmap-thumb ul li i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.vip-focusmap .focusmap-thumb ul li.active i {
+  border: 2px solid white;
+  background: none;
+}
+
+.detail {
+  box-shadow: 0px 0 80px -30px rgba(0, 0, 0, 0.6);
+  background-color: #FAF8F8;
+}
+
+.list-title {
+  text-align: center;
+}
+
+.list-title .striping1 {
+  margin: 0 auto;
+  width: 40%;
+  height: 6px;
+  background: #666;
+}
+
+.list-title .striping2 {
+  margin: 0 auto;
+  width: 30%;
+  height: 4px;
+  background: #666;
+  margin-bottom: 20px;
+}
+
+.list-title .max-title {
+  font-size: 30px;
+  margin: 20px 0 10px;
+  font-weight: bolder
+}
+
+/* .list-title .describe {
+  font-size: 16px;
+  margin: 10px 0;
+} */
+
+.list-img {
+  text-align: center;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.list-img img {
+  width: 400px;
+  height: 100%;
+}
+
+.list-img .sm-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.list-img .describe {
+  font-size: 16px;
+  text-align: left;
+  padding: 0 30px;
+  text-indent: 2em;
+  color: #666
+}
+
+.film-pictures {
+  margin-right: -20px;
+  margin-bottom: 30px;
+}
+
+.film-pictures li {
+  float: left;
+  width: 205px;
+  height: 337px;
+  margin-right: 18px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.film-pictures li>a {
+  width: 100%;
+  position: absolute;
+}
+
+.film-pictures li>a img {
+  width: 205px;
+  height: 287px;
+}
+
+.film-pictures li>a .film-type {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  height: 18px;
+  background: url(../img/vip-tips.png) no-repeat;
+  text-indent: -9999px;
+}
+
+.film-pictures li>a .film-type.for-vip-only {
+  width: 75px;
+  background-position: 0 -20px;
+}
+
+.film-pictures li>a .film-type.for-vip-free {
+  width: 72px;
+  background-position: -110px 0;
+}
+
+.film-pictures li>a .film-type.for-vip-dianbo {
+  width: 100px;
+  background-position: 0 0;
+}
+
+.film-pictures li>a .film-quality {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  right: 7px;
+  bottom: 7px;
+  width: 28px;
+  height: 18px;
+  line-height: 18px;
+  font-family: "宋体";
+  color: #fff;
+  text-align: center;
+}
+
+.film-pictures li .film-text {
+  width: 205px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.film-pictures li .film-text h3 {
+  font-size: 14px;
+  width: 168px;
+  height: 20px;
+  margin-top: 4px;
+  line-height: 20px;
+}
+
+.film-pictures li .film-text h3 a {
+  color: #000;
+}
+
+.film-pictures li .film-text h3 a:hover {
+  color: #0b68c8;
+}
+
+.film-pictures li .film-text p {
+  color: #999;
+  width: 168px;
+  height: 18px;
+  line-height: 18px;
+}
+
+.film-pictures li .film-text .film-score {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  color: #f60;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  font-family: Georgia;
+  font-size: 16px;
+}

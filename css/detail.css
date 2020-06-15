@@ -1,0 +1,54 @@
+.news {
+    width: 100%;
+}
+
+.news .newsIn {
+    width: 1200px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.newsIn>.lesson {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    width: 120px;
+    margin: 10px auto;
+}
+
+.newsIn .boxIn {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxIn .newsBox {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.newsBox .title {
+    margin: 10px auto 30px auto;
+}
+
+.newsBox .title a {
+    text-decoration: none;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.newsBox .title a:hover {
+    color: #ff5252;
+}
+
+.newsIn {
+    width: 1200px;
+}
+
+.newsIn>.page {
+    text-align: center;
+}

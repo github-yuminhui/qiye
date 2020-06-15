@@ -1,0 +1,97 @@
+[{
+        "id": 1,
+        "img": "image/banner_max_1.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 1
+    },
+    {
+        "id": 2,
+        "img": "image/banner_max_2.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 1
+    },
+    {
+        "id": 3,
+        "img": "image/banner_max_3.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 1
+    },
+    {
+        "id": 4,
+        "img": "image/banner_max_4.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 1
+    },
+    {
+        "id": 5,
+        "img": "image/banner_max_5.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 2
+    },
+    {
+        "id": 6,
+        "img": "image/banner_max_6.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 2
+    },
+    {
+        "id": 7,
+        "img": "image/banner_max_7.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 2
+    },
+    {
+        "id": 8,
+        "img": "image/banner_max_8.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 2
+    },
+    {
+        "id": 9,
+        "img": "image/banner_max_9.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 3
+    },
+    {
+        "id": 10,
+        "img": "image/banner_max_1.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 3
+    },
+    {
+        "id": 11,
+        "img": "image/banner_max_2.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 3
+    },
+    {
+        "id": 12,
+        "img": "image/banner_max_3.jpg",
+        "title": "外乡人",
+        "description": "上海外来人的辛酸与甘甜",
+        "date": "2020-6-3",
+        "page": 3
+    }
+]

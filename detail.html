@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>企业站</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/public.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+</head>
+
+<body>
+    <header class="head">
+        <div class="vip-header container bc clearfix">
+            <h1 class="vip-logo fl">
+                <a href="./index.html">不知名的影库</a>
+            </h1>
+            <ul class="top-links fr clearfix">
+                <li class="fl"><a href="./index.html">首页</a></li>
+                <li class="fl"><a href="./list.html">片库</a></li>
+                <li class="fl"><a href="./about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="des container">
+        <div class="des-in">
+            <div class="des-box">
+                <h2 class="f18 tc mb10 mt10"></h2>
+                <div class="des-date f14 tc mb10"></div>
+                <div class="box-line"></div>
+                <img src="" alt="" class="food-img">
+                <p class="f14 tc mb10 mt10"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="foot mb50">
+        <div class="container">
+            <div class="row justify-content-center mt10">
+                <div class="col-md-4 ">
+                    <h4 class="m10 f18 ">快速链接</h4>
+                    <div class="line"></div>
+                    <ul class="mt10">
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="m10 f18 ">联系我们</h4>
+                    <div class="line"></div>
+                    <p class="p5 f14">地址：福州仓山橘园洲创意园</p>
+                    <p class="p5 f14">邮箱：yuminhui@123.com</p>
+                    <p class="p5 f14">电话：123123123123</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="m10 f18 ">关注我们</h4>
+                    <div class="line"></div>
+                    <ul class="mt10">
+                        <li class="fl mr10">
+                            <img style="width: 40px" src="./image/icon/qq.png" alt="qq"></li>
+                        <li class="fl"><img style="width: 40px" src="./image/icon/gongzhonghao.png" alt="wx"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/jquery-3.4.1.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/U.js"></script>
+    <script src="./script/axios.min.js"></script>
+
+    <script>
+        $(function () {
+            var id = parseInt((location.search.split('='))[1]);
+            console.log(id);
+            axios.get('./static/list.json')
+                .then(function (res) {
+                    console.log(res.data)
+                    var a = res.data[id - 1];
+                    // console.log(res.data.length-1)
+                    $('.des-box h2').html(a.title);
+                    $('.des-box .des-date').html("发布时间：" + a.date);
+                    $('.food-img').prop('src', a.img);
+                    $('.des-box p').html(a.description);
+                }).catch(function (res) {
+                    console.log('error', res);
+
+                })
+
+        })
+    </script>
+</body>
+
+</html>

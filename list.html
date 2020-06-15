@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>企业站</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/public.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+</head>
+
+<body>
+    <header class="head">
+        <div class="vip-header container bc clearfix">
+            <h1 class="vip-logo fl">
+                <a href="./index.html">不知名的影库</a>
+            </h1>
+            <ul class="top-links fr clearfix">
+                <li class="fl"><a href="./index.html">首页</a></li>
+                <li class="fl"><a href="./list.html">片库</a></li>
+                <li class="fl"><a href="./about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="news">
+            <div class="newsIn">
+                <div class="lesson">影片库</div>
+                <div class="box-line"></div>
+                <div class="boxIn">
+                    <a class="newsBox">
+                        <img width="500px" src="" alt="">
+                        <div class="title">
+                            123
+                        </div>
+                    </a>
+                    <a class="newsBox">
+                        <img width="500px" src="" alt="">
+                        <div class="title">
+                            123
+                        </div>
+                    </a>
+                    <a class="newsBox">
+                        <img width="500px" src="" alt="">
+                        <div class="title">
+                            123
+                        </div>
+                    </a>
+                    <a class="newsBox">
+                        <img width="500px" src="" alt="">
+                        <div class="title">
+                            123
+                        </div>
+                    </a>
+                </div>
+
+                <div class="page">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination" id="pn">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot mb50">
+        <div class="container">
+            <div class="row justify-content-center mt10">
+                <div class="col-md-4 ">
+                    <h4 class="m10 f18 ">快速链接</h4>
+                    <div class="line"></div>
+                    <ul class="mt10">
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                        <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="m10 f18 ">联系我们</h4>
+                    <div class="line"></div>
+                    <p class="p5 f14">地址：福州仓山橘园洲创意园</p>
+                    <p class="p5 f14">邮箱：yuminhui@123.com</p>
+                    <p class="p5 f14">电话：123123123123</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="m10 f18 ">关注我们</h4>
+                    <div class="line"></div>
+                    <ul class="mt10">
+                        <li class="fl mr10">
+                            <img style="width: 40px" src="./image/icon/qq.png" alt="qq"></li>
+                        <li class="fl"><img style="width: 40px" src="./image/icon/gongzhonghao.png" alt="wx"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/jquery-3.4.1.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/U.js"></script>
+    <script src="./script/axios.min.js"></script>
+
+    <script>
+        $(function () {
+            function pageGet(page) {
+                axios.get('./static/list.json')
+                    .then(function (res) {
+                        const now = res.data;
+                        const arr = now.filter(item => item.page === page);
+                        $.each(arr, function (index, ele) {
+                            $('.newsBox').eq(index).find('img').prop('src', ele.img)
+                            $('.newsBox').eq(index).find('.title').html(ele.title)
+                            $('.newsBox').eq(index).prop('href', `detail.html?id=${ele.id}`);
+                        })
+                    }).catch(function (res) {
+                        console.log('error', res);
+                    })
+            }
+            $('#pn li a').click(function () {
+                $('#boxIn').html('');
+                pageGet(parseInt($(this).text()));
+            });
+            pageGet(1);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.nav {
+  height: 100px;
+  background-color: skyblue;
+  color: #fff;
+  line-height: 100px;
+}
+
+.head {
+  height: 64px;
+  border-bottom: 1px solid #c7c4c5;
+  box-shadow: 0 1px 3px #d8d7d7;
+  /* background: url('../image/vip-bgs.png') repeat-x; */
+}
+
+.head .vip-header {
+  height: 64px;
+}
+
+.head .vip-header .vip-logo {
+  margin: 17px 18px 6px;
+}
+
+.head .vip-header .vip-logo a {
+  display: block;
+  text-indent: -9999px;
+  width: 191px;
+  height: 35px;
+  background: url('../image/vip-logo.png') 0 70% no-repeat;
+}
+
+.head .vip-header .top-links {
+  height: 30px;
+  margin: 17px 7px;
+}
+
+.head .vip-header .top-links a {
+  display: block;
+  line-height: 30px;
+  margin: 0 15px;
+  color: #686868;
+}
+
+.head .vip-header .top-links a:hover {
+  color: #0b68c8;
+}
+
+.w1140 {
+  width: 1140px;
+}
