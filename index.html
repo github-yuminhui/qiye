@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>企业站</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/public.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/index.css" />
@@ -15,34 +16,42 @@
 
 <body>
 
-
-
   <header class="head">
-    <div class="vip-header container bc clearfix">
-      <h1 class="vip-logo fl">
+    <div class="vip-header container bc row ">
+      <h1 class="vip-logo col-md-6  col-xs-8">
         <a href="./index.html">不知名的影库</a>
       </h1>
-      <ul class="top-links fr clearfix">
-        <li class="fl"><a href="./index.html">首页</a></li>
-        <li class="fl"><a href="./list.html">片库</a></li>
-        <li class="fl"><a href="./about.html">关于我们</a></li>
-      </ul>
+      <button class="navbar-toggler col-xs-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="collapse navbar-collapse col-md-6 col-xs-12 " style="text-align: center" id="navbarSupportedContent">
+        <ul class="top-links row">
+          <li class="col-md-4 col-sm-12 col-xs-12"><a href="./index.html">首页</a></li>
+          <li class="col-md-4 col-sm-12 col-xs-12"><a href="./list.html">片库</a></li>
+          <li class="col-md-4 col-sm-12 col-xs-12"><a href="./about.html">关于我们</a></li>
+        </ul>
+      </div>
+
     </div>
   </header>
 
+  <div class="vip-focusmap w bc pr">
+    <ul class="focusmap-holder pr"></ul>
+    <a href="javascript:;" class="focusmap-l-arr"></a>
+    <a href="javascript:;" class="focusmap-r-arr"></a>
+    <div class="focusmap-thumb">
+      <ul></ul>
+    </div>
+  </div>
+
   <div class="container detail">
     <!-- 轮播图 -->
-    <div class="vip-focusmap w bc pr">
-      <ul class="focusmap-holder pr"></ul>
-      <a href="javascript:;" class="focusmap-l-arr"></a>
-      <a href="javascript:;" class="focusmap-r-arr"></a>
-      <div class="focusmap-thumb">
-        <ul></ul>
-      </div>
-    </div>
+
 
     <div class="row mb40">
-      <div class="col-md-12 list-title">
+      <div class="col-md-12 mt30 list-title">
         <div class="striping1"></div>
         <p class="max-title">漫威 · 精选</p>
         <!-- <p class="describe">奥创事件后复仇者联盟内部矛盾激化至分裂</p> -->
@@ -57,16 +66,16 @@
           《美国队长3：内战》并没有走普通的路子，而是把重点放在了人物情感上的冲突，试图将主题统一在人与人的情感下，作为漫威宇宙的重要组成部分，影片的很多细节环环相扣，而且与漫威宇宙其他影片遥相呼应，影片的打戏也很出色，由于套用了动作片的模式，个性十足的追逐动作戏，尤其有两场一环扣一环的逃亡场面，让人目不暇接，并且充分体现了每个超级英雄的能力和性格特点。
         </p>
       </div>
-
+      <div class="col-md-6 list-img">
+        <img src="./image/02.jpg" alt="2">
+      </div>
       <div class="col-md-6 list-img">
         <p class="sm-title">蜘蛛侠：英雄远征</p>
         <p class="describe">
           老实说，影片对蜘蛛侠“小人物的失意”的设计多少有蓄意之处，所谓“深刻的人性洞察”无非是将英雄还原成普通人这么简单。本质上《蜘蛛侠2》还是一个依靠原著漫画的影响力和特技效果吸引观众的暑期电影。它的了不起之处在于提供了一个在特技、场面和人性描写之间平衡的可能的方法，这在《蜘蛛侠2》之前，向来被视为鱼和熊掌不可兼得。
         </p>
       </div>
-      <div class="col-md-6 list-img">
-        <img src="./image/02.jpg" alt="2">
-      </div>
+
 
       <div class="col-md-6 list-img">
         <img src="./image/04.jpg" alt="3">
@@ -80,74 +89,49 @@
     </div>
 
     <div class="row mb40">
-      <div class="col-md-12 list-title">
+      <div class="col-md-12 list-title ">
         <div class="striping1"></div>
         <p class="max-title">影视 · 推荐</p>
-        <!-- <p class="describe">奥创事件后复仇者联盟内部矛盾激化至分裂</p> -->
         <div class="striping2"></div>
       </div>
-      <ul class="film-pictures ml30 mt20 clearfix">
-        <li>
+      <div class="row p10">
+        <div class="col-md-3 col-sm-6" style="text-align: center">
           <a href="">
-            <div class="film-type">外乡人</div>
-            <img src="./image/power/1.jpg" alt="外乡人">
-            <div class="film-quality">标清</div>
+            <img class="w" src="./image/power/1.jpg" alt="外乡人">
           </a>
           <div class="film-text p10 clearfix">
             <h3><a href="">外乡人</a></h3>
             <p>上海外来人的辛酸与甘甜</p>
-            <div class="film-score fr"><span>9.1</div>
           </div>
-        </li>
-        <li>
+        </div>
+        <div class="col-md-3 col-sm-6" style="text-align: center">
           <a href="">
-            <div class="film-type">外乡人</div>
-            <img src="./image/power/2.jpg" alt="外乡人">
-            <div class="film-quality">标清</div>
+            <img class="w" src="./image/power/2.jpg" alt="外乡人">
           </a>
           <div class="film-text p10 clearfix">
             <h3><a href="">外乡人</a></h3>
             <p>上海外来人的辛酸与甘甜</p>
-            <div class="film-score fr"><span>9.1</div>
           </div>
-        </li>
-        <li>
+        </div>
+        <div class="col-md-3 col-sm-6" style="text-align: center">
           <a href="">
-            <div class="film-type">外乡人</div>
-            <img src="./image/power/3.jpg" alt="外乡人">
-            <div class="film-quality">标清</div>
+            <img class="w" src="./image/power/3.jpg" alt="外乡人">
           </a>
           <div class="film-text p10 clearfix">
             <h3><a href="">外乡人</a></h3>
             <p>上海外来人的辛酸与甘甜</p>
-            <div class="film-score fr"><span>9.1</div>
           </div>
-        </li>
-        <li>
+        </div>
+        <div class="col-md-3 col-sm-6" style="text-align: center">
           <a href="">
-            <div class="film-type">外乡人</div>
-            <img src="./image/power/4.jpg" alt="外乡人">
-            <div class="film-quality">标清</div>
+            <img class="w" src="./image/power/4.jpg" alt="外乡人">
           </a>
           <div class="film-text p10 clearfix">
             <h3><a href="">外乡人</a></h3>
             <p>上海外来人的辛酸与甘甜</p>
-            <div class="film-score fr"><span>9.1</div>
           </div>
-        </li>
-        <li>
-          <a href="">
-            <div class="film-type">外乡人</div>
-            <img src="./image/power/5.jpg" alt="外乡人">
-            <div class="film-quality">标清</div>
-          </a>
-          <div class="film-text p10 clearfix">
-            <h3><a href="">外乡人</a></h3>
-            <p>上海外来人的辛酸与甘甜</p>
-            <div class="film-score fr"><span>9.1</div>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -159,22 +143,22 @@
           <h4 class="m10 f18 ">快速链接</h4>
           <div class="line"></div>
           <ul class="mt10">
-            <li class="col-md-4 p10"><a href="#">网站首页</a></li>
-            <li class="col-md-4 p10"><a href="#">网站首页</a></li>
-            <li class="col-md-4 p10"><a href="#">网站首页</a></li>
-            <li class="col-md-4 p10"><a href="#">网站首页</a></li>
-            <li class="col-md-4 p10"><a href="#">网站首页</a></li>
-            <li class="col-md-4 p10"><a href="#">网站首页</a></li>
+            <li class="col-md-4 col-sm-2 col-xs-2 p10"><a href="#">网站首页</a></li>
+            <li class="col-md-4 col-sm-2 col-xs-2 p10"><a href="#">网站首页</a></li>
+            <li class="col-md-4 col-sm-2 col-xs-2 p10"><a href="#">网站首页</a></li>
+            <li class="col-md-4 col-sm-2 col-xs-2  p10"><a href="#">网站首页</a></li>
+            <li class="col-md-4 col-sm-2 col-xs-2  p10"><a href="#">网站首页</a></li>
+            <li class="col-md-4 col-sm-2 col-xs-2  p10"><a href="#">网站首页</a></li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <h4 class="m10 f18 ">联系我们</h4>
           <div class="line"></div>
           <p class="p5 f14">地址：福州仓山橘园洲创意园</p>
           <p class="p5 f14">邮箱：yuminhui@123.com</p>
           <p class="p5 f14">电话：123123123123</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <h4 class="m10 f18 ">关注我们</h4>
           <div class="line"></div>
           <ul class="mt10">

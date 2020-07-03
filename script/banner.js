@@ -1,6 +1,6 @@
 U.addLoad(function () {
    
-    axios.get("./static/banner.json")
+    axios.get("http://mock-api.com/onwEBJzN.mock/banner")
     .then(res => {
         console.log(res);
         show(res.data);
