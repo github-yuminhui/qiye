@@ -21,29 +21,37 @@
 }
 
 .head .vip-header .navbar-toggler {
-  width: 20px;
-  height: 20px;
-  background: #fff;
+  width: 15px;
+  height: 15px;
+  background: url('../image/icon/zhankai.png') no-repeat;
+  background-size: cover;
   display: none;
   text-align: center;
 }
 
 .collapse {
+  /* width: 20px;
+  height: 20px; */
+  /* border: 1px solid; */
   width: 50%;
+  /* background: url('../image/icon/zhankai.png') no-repeat; */
 }
 
-@media screen and (max-width: 991px) {
-  .collapse {
-    width: 100%;
-  }
-}
 
 @media screen and (max-width: 768px) {
+  .collapse {
+    /* width: 20px;
+    height: 20px;
+    border: 1px solid; */
+    width: 100%;
+    /* background: url('../image/icon/zhankai.png') no-repeat; */
+  }
 
   .head .vip-header .navbar-toggler {
-    /* width: 20px;
-    height: 20px; */
-    background: #fff;
+    width: 15px;
+    height: 15px;
+    background: url('../image/icon/zhankai.png') no-repeat;
+    background-size: cover;
     display: block;
     float: right;
     margin-top: 5px;
